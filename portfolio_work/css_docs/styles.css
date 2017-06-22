@@ -1,0 +1,80 @@
+
+.main{
+     list-style-type: none;
+     margin: 0;
+     padding: 5px;
+     overflow: hidden;
+
+     text-align: center;
+}
+
+li {
+     float: left;
+}
+
+li a {
+     display: block;
+     color: #0202;
+     font-size: medium;
+     text-align: center;
+     padding: 14px 170px;
+     text-decoration: none;
+}
+
+
+/* unvisited link */
+a:link {
+     color: green;
+}
+
+/* visited link */
+a:visited {
+     color: green;
+}
+
+/* mouse over link */
+a:hover {
+     color: red;
+}
+
+/* selected link */
+a:active{
+     color: yellow;
+}
+
+footer{
+     text-align: center;
+}
+
+table, th, td {
+     border: 1px solid black;
+    padding: 15px;
+}
+
+table {
+     width: 100%;
+}
+
+th {
+     height: 50px;
+}
+
+.information{
+    text-align: center;
+    font-size: 45px;
+    color: #00a631;
+}
+
+.error {
+     color: #FF0000;
+}
+
+.driver{
+     font-size: 25px;
+     text-decoration: double;
+
+}
+
+
+
+
