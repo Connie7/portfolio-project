@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+<body>
+
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="./components/images/header-image1.jpg" >
+  <img class="mySlides" src="./components/images/header-image2.jpeg" style="  border-radius: 25px;">
+  <img class="mySlides" src="./components/images/header-image3.png" style="  border-radius: 10%; width: 85%">
+  <img class="mySlides" src="./components/images/header-image4.jpeg" style="width: 75%">
+  <img class="mySlides" src="./components/images/header-image5.png" style="  border-radius: 25px; width: 70%">
+  <img class="mySlides" src="./components/images/header-image6.jpeg" style="  border-radius: 10%; width: 70%">
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 4 seconds
+
+    }
+</script>
+
+
+  <div id="app-container"></div>
+</body>
+</html>
+<script src= jquery.js></script>
